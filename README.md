@@ -100,9 +100,9 @@ v = it.next().value;
 
 The invoked function is provided three arguments:
 
--   `value`: iterated value
--   `index`: iterated value index
--   `src`: source array-like object
+-   **value**: iterated value.
+-   **index**: iterated value index.
+-   **src**: source array-like object.
 
 <!-- eslint-disable no-sparse-arrays -->
 
@@ -165,6 +165,7 @@ var count = ctx.count;
 -   If provided a generic `array`, the returned iterator **ignores** holes (i.e., `undefined` values). To iterate over all generic `array` elements, use [`@stdlib/array/to-iterator`][@stdlib/array/to-iterator].
 -   A returned iterator does **not** copy a provided array-like `object`. To ensure iterable reproducibility, copy a provided array-like `object` **before** creating an iterator. Otherwise, any changes to the contents of an array-like `object` will be reflected in the returned iterator.
 -   In environments supporting `Symbol.iterator`, the function **explicitly** does **not** invoke an array's `@@iterator` method, regardless of whether this method is defined. To convert an array to an implementation defined iterator, invoke this method directly.
+-   The returned iterator supports array-like objects having getter and setter accessors for array element access (e.g., [`@stdlib/array/complex64`][@stdlib/array/complex64]).
 
 </section>
 
@@ -297,6 +298,8 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 [stdlib-authors]: https://github.com/stdlib-js/stdlib/graphs/contributors
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/array-to-sparse-iterator/main/LICENSE
+
+[@stdlib/array/complex64]: https://github.com/stdlib-js/array-complex64
 
 <!-- <related-links> -->
 
