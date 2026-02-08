@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import sparsearray2iterator from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-to-sparse-iterator@esm/index.mjs';
+import sparsearray2iterator from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-to-sparse-iterator@v0.2.3-esm/index.mjs';
 ```
 
 #### sparsearray2iterator( src\[, mapFcn\[, thisArg]] )
@@ -189,7 +189,7 @@ var count = ctx.count;
 <script type="module">
 
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@esm/index.mjs';
-import sparsearray2iterator from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-to-sparse-iterator@esm/index.mjs';
+import sparsearray2iterator from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-to-sparse-iterator@v0.2.3-esm/index.mjs';
 
 function scale( v, i ) {
     return v * (i+1);
