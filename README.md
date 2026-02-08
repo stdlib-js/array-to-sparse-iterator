@@ -52,6 +52,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import sparsearray2iterator from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-to-sparse-iterator@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/array-to-sparse-iterator/tags). For example,
+
+```javascript
 import sparsearray2iterator from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-to-sparse-iterator@v0.2.3-esm/index.mjs';
 ```
 
@@ -189,7 +194,7 @@ var count = ctx.count;
 <script type="module">
 
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@esm/index.mjs';
-import sparsearray2iterator from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-to-sparse-iterator@v0.2.3-esm/index.mjs';
+import sparsearray2iterator from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-to-sparse-iterator@esm/index.mjs';
 
 function scale( v, i ) {
     return v * (i+1);
